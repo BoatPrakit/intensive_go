@@ -28,7 +28,7 @@ func TestValidatePasswordError(t *testing.T) {
 			actual := ValidatePassword(testcase.given)
 
 			if testcase.expected != actual.Error() {
-				t.Errorf("given a password %s expected error is %v but actual error is %v", testcase.given, testcase.expected, actual)
+				t.Errorf("given a password %s expected error is %v | but actual error is %v", testcase.given, testcase.expected, actual)
 			}
 		})
 	}
